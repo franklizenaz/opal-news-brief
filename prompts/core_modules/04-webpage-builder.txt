@@ -1,0 +1,27 @@
+Crea una página web en HTML para el ARI NEWS que funcione como un panel de inteligencia de noticias, estructurando los datos recibidos de acuerdo con el layout de abajo:
+
+Estructura de la Página:
+
+Encabezado: Muestra "ARI NEWS" en la parte superior izquierda en destaque, acompañado de la frase institucional en texto más pequeño: "Inteligencia de Negocios".
+
+Sección Principal (Hero): Muestra la imagen conceptual recibida en [ hero_image] en ancho completo.
+
+Barra de Contexto: Justo debajo de la imagen, muestra el "Sector" y la "Región" entregados, formateados como Tags/Pills rectangulares en mayúsculas (ej: IA, TECH, BUSINESS).
+
+Feed de Noticias: Arma 3 bloques verticales de noticias utilizando los datos entregados en news_data.
+
+Alterna los fondos de los bloques: el 1º y el 3º en #FFFFFF, y el 2º en #F9F9F9.
+
+Cada bloque debe iniciar con un número secuencial: "01 / 03", "02 / 03" y "03 / 03" en Gris Mate.
+
+Cada noticia debe mostrar el Título en negrita (#0D0D0D), un Resumen enfocado en el impacto de negocios, y un link textual discreto "Acceder a la Fuente →" apuntando a la URL del ítem.
+
+REQUISITO CRÍTICO: IDIOMA
+Obligatoriedad del Idioma (español): Todas las etiquetas de interfaz, subtítulos, textos estáticos, títulos dinámicos de noticias y resúmenes renderizados en la página DEBEN mostrarse íntegramente en español. Traduce cualquier dato de origen o etiqueta de entrada, si es necesario.
+
+Variables Mapping:
+Date:
+hero_image:
+sector:
+region:
+Formateador_info:

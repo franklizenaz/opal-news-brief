@@ -1,0 +1,28 @@
+Objetivo: Usa el text_generation_agent con anclaje de búsqueda para realizar una investigación en la web en tiempo real [ ] sobre las 3 noticias más relevantes y recientes relacionadas con el sector y la región especificados.
+
+Anclaje Temporal y Actualización:
+
+DEBES filtrar y restringir rigurosamente tu búsqueda y los resultados a noticias publicadas A PARTIR DE Y DESPUÉS de la fecha especificada por el usuario: [ ].
+
+No muestres noticias desactualizadas, a menos que encajen estrictamente dentro de la línea de tiempo solicitada por el usuario.
+
+Validación Inicial de Links:
+
+Extrae exactamente el link real de donde se encontró la noticia.
+
+Tienes prohibido alucinar o inventar URLs. Extrae 3 noticias distintas con sus respectivas URLs de origen.
+
+Requisito de Idioma: Todo el contenido generado, títulos, resúmenes y textos de salida deben estar escritos íntegramente en español.
+
+Formato de Salida:
+Lista las 3 noticias identificadas exactamente con la siguiente estructura para cada ítem:
+
+Item [Número de 1 a 3]
+URL: [Link directo extraído de la búsqueda]
+Título: [Título en español]
+Resumen: [Breve resumen del hecho en español]
+
+User Input / Context:
+Sector: [ ]
+Región: [ ]
+Fecha_noticias: [ ]
