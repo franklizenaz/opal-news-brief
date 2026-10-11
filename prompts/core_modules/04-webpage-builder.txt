@@ -1,25 +1,21 @@
-Crea una página web en HTML para el ARI NEWS que funcione como un panel de inteligencia de noticias, estructurando los datos recibidos de acuerdo con el layout de abajo:
+Crea una página web en HTML para NewsBrief que funcione como panel de inteligencia de noticias, estructurando los datos recibidos de acuerdo con la estructura de abajo:
 
 Estructura de la Página:
 
-Encabezado: Muestra "ARI NEWS" en la parte superior izquierda en destaque, acompañado de la frase institucional en texto más pequeño: "Inteligencia de Negocios".
+1. Encabezado: "NewsBrief" en la parte superior izquierda en destaque, acompañado de la frase institucional en texto más pequeño: "Inteligencia de Negocios". Debajo, en metadatos discretos, muestra la fecha [Fecha_noticias].
 
-Sección Principal (Hero): Muestra la imagen conceptual recibida en [03-hero-image-generator] en ancho completo.
+2. Sección principal (Hero): la imagen conceptual recibida en [03-hero-image-generator] a ancho completo.
 
-Barra de Contexto: Justo debajo de la imagen, muestra el sector "[Sector]" y la región "[Region]" entregados, formateados como Tags/Pills rectangulares en mayúsculas (ej: IA, TECH, BUSINESS).
+3. Barra de contexto: justo debajo de la imagen, el sector "[Sector]" y la región "[Región]" formateados como tags rectangulares en mayúsculas (ej: IA, TECH, BUSINESS).
 
-Feed de Noticias: Arma [Numero_noticias] bloques verticales de noticias utilizando los datos entregados en news_data.
+4. Feed de noticias: arma exactamente [Numero_noticias] bloques verticales de noticias utilizando los datos entregados en news_data, de [02-data-formatter].
+   - Cada bloque inicia con su numeración secuencial de 2 dígitos sobre el total: 01/[Numero_noticias], 02/[Numero_noticias]... (ej: 01/10).
+   - Cada noticia debe mostrar su Título en negrita (#0D0D0D), su Resumen enfocado en el impacto de negocios, y un enlace de texto discreto "Buscar en Google →" apuntando a la URL del ítem.
+   - Cada noticia es un bloque independiente con sus propios datos.
 
-Cada bloque debe iniciar con un número secuencial: "number_article/[Numero_noticias]" (Ejm. 01/10, si fueran 10 noticias en total)
-
-Cada noticia debe mostrar el Título en negrita (#0D0D0D), un Resumen enfocado en el impacto de negocios, y un link textual discreto "Acceder a la Fuente →" apuntando a la URL del ítem.
-
-REQUISITO CRÍTICO: IDIOMA
-Obligatoriedad del Idioma (español): Todas las etiquetas de interfaz, subtítulos, textos estáticos, títulos dinámicos de noticias y resúmenes renderizados en la página DEBEN mostrarse íntegramente en español. Traduce cualquier dato de origen o etiqueta de entrada, si es necesario.
+REGLA ANTI-RESUMEN: lista exactamente [Numero_noticias] tarjetas, una por noticia. Prohibido resumir, agrupar o sintetizar las noticias en un párrafo o bloque único, y prohibido inventar noticias que no estén en news_data.
 
 Variables Mapping:
-Date: [Fecha_noticias]
+User input: [Sector], [Región], [Fecha_noticias], [Numero_noticias]
+news_data / Formateador_info: [02-data-formatter]
 hero_image: [03-hero-image-generator]
-sector: [Sector]
-region: [Region]
-Formateador_info: [02-data-formatter]

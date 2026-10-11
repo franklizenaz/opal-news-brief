@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsBrief | Inteligencia de Negocios</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        background: '#0a0a0a',
+                        card: '#121212',
+                        accent: '#3b82f6',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #0a0a0a; color: #e5e7eb; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .card-hover:hover { transform: translateY(-5px); transition: all 0.3s ease; border-color: rgba(59, 130, 246, 0.5); }
+        .gradient-text { background: linear-gradient(90deg, #60a5fa, #34d399); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-blue-500 selection:text-white">
+
+    <header class="p-8 md:px-16 border-b border-white/5 flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <div>
+            <h1 class="text-4xl md:text-5xl font-display font-bold tracking-tight">News<span class="text-blue-500">Brief</span></h1>
+            <p class="text-gray-400 font-medium tracking-wide text-sm mt-1">Inteligencia de Negocios</p>
+        </div>
+        <div class="text-right">
+            <span class="px-3 py-1 rounded-full bg-white/5 text-xs font-mono text-gray-500">2026-01-01</span>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-12">
+        <!-- Hero Section -->
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24">
+            <div class="overflow-hidden rounded-3xl shadow-2xl">
+                <img src='https://opal.google/board/blobs/d053a23d-d30a-424a-9db3-796c5a7258ab' alt='Análisis de Mercado' class="w-full h-auto object-cover hover:scale-105 transition-transform duration-700">
+            </div>
+            <div>
+                <span class="text-blue-400 font-semibold uppercase tracking-widest text-xs mb-4 block">Reporte Ejecutivo</span>
+                <h2 class="text-5xl font-display font-bold leading-tight mb-6">Panorama Laboral en Chile: Desafíos 2026</h2>
+                <p class="text-gray-400 text-lg leading-relaxed">Un análisis exhaustivo sobre las reformas estructurales, las tendencias de talento y la adaptabilidad corporativa que definen el ecosistema de Recursos Humanos este año.</p>
+            </div>
+        </section>
+
+        <!-- Bento Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- Item 1 -->
+            <div class="glass p-6 rounded-2xl card-hover">
+                <h3 class="font-bold text-xl mb-3">Incremento del sueldo mínimo</h3>
+                <p class="text-gray-400 text-sm mb-4">A partir del 1 de enero de 2026, el ingreso mínimo mensual se fijó en $539.000 bruto.</p>
+                <a href="https://www.google.com/search?q=incremento-del-sueldo-minimo-en-chile-a-539000" class="text-blue-400 hover:text-blue-300 text-sm font-semibold">Buscar en Google →</a>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="glass p-6 rounded-2xl card-hover">
+                <h3 class="font-bold text-xl mb-3">Jornada laboral 42 horas</h3>
+                <p class="text-gray-400 text-sm mb-4">La Ley 40 Horas redujo la jornada máxima de 44 a 42 horas semanales a partir de abril.</p>
+                <a href="https://www.google.com/search?q=entrada-en-vigencia-de-la-jornada-laboral-de-42-horas" class="text-blue-400 hover:text-blue-300 text-sm font-semibold">Buscar en Google →</a>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="glass p-6 rounded-2xl card-hover">
+                <h3 class="font-bold text-xl mb-3">Tendencias Adecco 2026</h3>
+                <p class="text-gray-400 text-sm mb-4">IA orientada a resultados y gestión basada en habilidades como pilares estratégicos.</p>
+                <a href="https://www.google.com/search?q=informe-de-adecco-sobre-tendencias-de-recursos-humanos-2026" class="text-blue-400 hover:text-blue-300 text-sm font-semibold">Buscar en Google →</a>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="glass p-6 rounded-2xl card-hover">
+                <h3 class="font-bold text-xl mb-3">Impacto Redes Sociales</h3>
+                <p class="text-gray-400 text-sm mb-4">50% de trabajadores chilenos reportan consecuencias laborales negativas por publicaciones.</p>
+                <a href="https://www.google.com/search?q=chile-lidera-la-region-en-problemas-laborales-por-publicaciones-en-redes-sociales" class="text-blue-400 hover:text-blue-300 text-sm font-semibold">Buscar en Google →</a>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="glass p-6 rounded-2xl card-hover">
+                <h3 class="font-bold text-xl mb-3">Cotización Previsional</h3>
+                <p class="text-gray-400 text-sm mb-4">Aporte patronal subió a 3,5% para fortalecer el sistema de pensiones.</p>
+                <a href="https://www.google.com/search?q=aumento-de-la-cotizacion-previsional-obligatoria-a-cargo-del-empleador" class="text-blue-400 hover:text-blue-300 text-sm font-semibold">Buscar en Google →</a>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="glass p-6 rounded-2xl card-hover">
+                <h3 class="font-bold text-xl mb-3">Panel de Expertos CCS</h3>
+                <p class="text-gray-400 text-sm mb-4">70 líderes de RRHH integrados para modernizar la regulación laboral.</p>
+                <a href="https://www.google.com/search?q=ccs-conforma-panel-de-expertos-en-gestion-de-personas" class="text-blue-400 hover:text-blue-300 text-sm font-semibold">Buscar en Google →</a>
+            </div>
+
+            <!-- Item 7 -->
+            <div class="glass p-6 rounded-2xl card-hover">
+                <h3 class="font-bold text-xl mb-3">People Day 2026</h3>
+                <p class="text-gray-400 text-sm mb-4">Calendario de eventos clave en bienestar laboral e innovación tecnológica.</p>
+                <a href="https://www.google.com/search?q=publicacion-del-ranking-de-eventos-de-recursos-humanos-para-el-segundo-semestre" class="text-blue-400 hover:text-blue-300 text-sm font-semibold">Buscar en Google →</a>
+            </div>
+
+            <!-- Item 8 -->
+            <div class="glass p-6 rounded-2xl card-hover">
+                <h3 class="font-bold text-xl mb-3">Subsidio Unificado</h3>
+                <p class="text-gray-400 text-sm mb-4">Bonificaciones de hasta 10% del sueldo para fomentar nuevas contrataciones.</p>
+                <a href="https://www.google.com/search?q=inicio-del-nuevo-subsidio-unificado-al-empleo" class="text-blue-400 hover:text-blue-300 text-sm font-semibold">Buscar en Google →</a>
+            </div>
+
+            <!-- Item 9 -->
+            <div class="glass p-6 rounded-2xl card-hover">
+                <h3 class="font-bold text-xl mb-3">Desempleo al 9,6%</h3>
+                <p class="text-gray-400 text-sm mb-4">Nivel más alto en 5 años, exigiendo nuevas estrategias de retención.</p>
+                <a href="https://www.google.com/search?q=tasa-de-desempleo-en-chile-escala-al-96" class="text-blue-400 hover:text-blue-300 text-sm font-semibold">Buscar en Google →</a>
+            </div>
+
+            <!-- Item 10 -->
+            <div class="glass p-6 rounded-2xl card-hover">
+                <h3 class="font-bold text-xl mb-3">Adaptabilidad Laboral</h3>
+                <p class="text-gray-400 text-sm mb-4">El Ejecutivo prepara 10 medidas para flexibilizar la contratación.</p>
+                <a href="https://www.google.com/search?q=gobierno-prepara-paquete-de-10-medidas-de-adaptabilidad-laboral" class="text-blue-400 hover:text-blue-300 text-sm font-semibold">Buscar en Google →</a>
+            </div>
+
+            <!-- Item 11 -->
+            <div class="glass p-6 rounded-2xl card-hover">
+                <h3 class="font-bold text-xl mb-3">Mediación Minera Escondida</h3>
+                <p class="text-gray-400 text-sm mb-4">Intervención de la Dirección del Trabajo en disputas sectoriales críticas.</p>
+                <a href="https://www.google.com/search?q=mediacion-de-la-direccion-del-trabajo-en-conflicto-de-minera-escondida" class="text-blue-400 hover:text-blue-300 text-sm font-semibold">Buscar en Google →</a>
+            </div>
+
+            <!-- Item 12 -->
+            <div class="glass p-6 rounded-2xl card-hover">
+                <h3 class="font-bold text-xl mb-3">Implementación Ley Karin</h3>
+                <p class="text-gray-400 text-sm mb-4">Más de 3.000 líderes capacitados en prevención de acoso laboral.</p>
+                <a href="https://www.google.com/search?q=impacto-del-programa-dt-previene-en-la-implementacion-de-la-ley-karin" class="text-blue-400 hover:text-blue-300 text-sm font-semibold">Buscar en Google →</a>
+            </div>
+        </div>
+
+        <section class="mt-16 rounded-3xl overflow-hidden glass p-10 text-center">
+            <img src='https://opal.google/board/blobs/d053a23d-d30a-424a-9db3-796c5a7258ab' alt='Visualización de datos' class="mx-auto h-64 mb-8 grayscale hover:grayscale-0 transition-all duration-500">
+            <h4 class="text-2xl font-display font-bold">Data Insight: El Futuro del Trabajo</h4>
+            <p class="text-gray-400 max-w-xl mx-auto mt-4">Analizamos constantemente las fluctuaciones del mercado chileno para entregar las herramientas de toma de decisiones más precisas del sector.</p>
+        </section>
+
+    </main>
+</body>
+</html>

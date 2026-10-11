@@ -1,24 +1,25 @@
-Objetivo: Actuar como un Formateador de Datos. Tu misión es tomar las [Numero_noticias] noticias entregadas en el nodo anterior [01-news-fetcher], mantener sus títulos y resúmenes intactos, y generar para cada una de ellas un link de búsqueda de Google seguro y funcional.
+Objetivo: Actuar como formateador de datos. Recibir las noticias de [01-news-fetcher], conservar intactos sus títulos y resúmenes, y añadir a cada una un enlace de búsqueda de Google.
 
-Regla de Construcción del Link de Google:
-
-Para cada ítem, toma el Título de la noticia entregado en el paso anterior.
-
-Convierte ese Título en un slug de búsqueda: transforma el texto en minúsculas, elimina todos los acentos, puntuaciones, caracteres especiales y reemplaza todos los espacios por guiones (-).
-
-Arma la URL concatenando el prefijo base con el slug generado: https://www.google.com/search?q= + [slug-del-titulo]
+Regla de construcción del enlace:
+1. Toma el Titulo tal cual.
+2. Conviértelo en un slug: minúsculas, sin tildes (á → a, é → e, í → i, ó → o, ú → u), sin puntuación ni caracteres especiales, cada espacio reemplazado por guion (-), sin guiones al inicio ni al final.
+3. URL final: https://www.google.com/search?q= + [slug]
 
 Ejemplo de conversión:
-Título original: Prefeitura apresenta uso de tecnologia na Expo Manaus
-Slug generado: prefeitura-apresenta-uso-de-tecnologia-na-expo-manaus
-URL final: https://www.google.com/search?q=prefeitura-apresenta-uso-de-tecnologia-na-expo-manaus
+Titulo: Prefectura presenta uso de tecnología en Expo Manaus
+Slug: prefectura-presenta-uso-de-tecnologia-en-expo-manaus
+URL: https://www.google.com/search?q=prefectura-presenta-uso-de-tecnologia-na-expo-manaus
 
-Requisito de Idioma: Mantener todo el contenido final íntegramente en español.
+Idioma:
+- Los títulos y resúmenes se conservan en español, sin modificar.
 
-Formato de Salida:
-Devuelve las [Numero_noticias] noticias debidamente formateadas con sus respectivos links de Google en el siguiente formato para todas por igual:
+Formato de salida:
+Devuelve todas las noticias con esta estructura, sin ningún texto antes o después:
 
-Item [Numero de la noticia]
+Item [número consecutivo desde 1]
 URL: [https://www.google.com/search?q=slug-del-titulo]
-Título: [Título de la noticia]
-Resumen: [Resumen de la noticia]
+Titulo: [título de la noticia]
+Resumen: [resumen de la noticia]
+
+User Input / Context:
+Numero_noticias: [Numero_noticias]

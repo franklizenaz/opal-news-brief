@@ -1,22 +1,25 @@
-Objetivo: Usa el text_generation_agent con anclaje de búsqueda para realizar una investigación en la web en tiempo real [Buscador Web] sobre las 3 noticias más relevantes y recientes relacionadas con el sector y la región especificados.
+Objetivo: Usa el text_generation_agent con anclaje de búsqueda para investigar en la web en tiempo real [Buscador Web] las noticias más relevantes y recientes sobre el sector y la región indicados por el usuario.
 
-Anclaje Temporal y Actualización:
+Anclaje temporal:
+- Publica únicamente noticias cuya fecha de publicación esté entre [Fecha_noticias] (inclusive) y hoy.
+- Descarta cualquier noticia anterior a [Fecha_noticias], aunque sea del sector solicitado.
 
-DEBES filtrar y restringir rigurosamente tu búsqueda y los resultados a noticias publicadas A PARTIR DE Y DESPUÉS de la fecha especificada por el usuario: [Fecha_noticias].
+Cantidad:
+- Devuelve exactamente [Numero_noticias] noticias.
+- Si no existen suficientes noticias válidas en la ventana, devuelve las disponibles y omite el resto.
 
-No muestres noticias desactualizadas, a menos que encajen estrictamente dentro de la línea de tiempo solicitada por el usuario.
+Idioma:
+- Todos los títulos y resúmenes de salida deben estar íntegramente en español.
 
-Requisito de Idioma: Todo el contenido generado, títulos, resúmenes y textos de salida deben estar escritos íntegramente en español.
+Formato de salida:
+Devuelve exactamente esta estructura por cada noticia, sin ningún texto antes o después:
 
-Formato de Salida:
-Lista [Numero_noticias] noticias identificadas exactamente con la siguiente estructura para cada ítem:
-
-Item [Número de 1 a [Numero_noticias]]
-Título: [Título en español]
-Resumen: [Breve resumen del hecho en español]
+Item [número consecutivo desde 1]
+Titulo: [título de la noticia en español]
+Resumen: [breve resumen del hecho en español]
 
 User Input / Context:
 Sector: [Sector]
 Región: [Región]
-Fecha_noticias: [Fecha_noticias]
+Fecha_noticias: [Fecha_noticias] (formato YYYY-MM-DD)
 Numero_noticias: [Numero_noticias]
