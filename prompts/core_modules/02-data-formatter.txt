@@ -1,4 +1,4 @@
-Objetivo: Actuar como un Formateador de Datos. Tu misión es tomar las 3 noticias entregadas en el nodo anterior [ ], mantener sus títulos y resúmenes intactos, y generar para cada una de ellas un link de búsqueda de Google seguro y funcional.
+Objetivo: Actuar como un Formateador de Datos. Tu misión es tomar las [Numero_noticias] noticias entregadas en el nodo anterior [01-news-fetcher], mantener sus títulos y resúmenes intactos, y generar para cada una de ellas un link de búsqueda de Google seguro y funcional.
 
 Regla de Construcción del Link de Google:
 
@@ -16,19 +16,9 @@ URL final: https://www.google.com/search?q=prefeitura-apresenta-uso-de-tecnologi
 Requisito de Idioma: Mantener todo el contenido final íntegramente en español.
 
 Formato de Salida:
-Devuelve las 3 noticias debidamente formateadas con sus respectivos links de Google:
+Devuelve las [Numero_noticias] noticias debidamente formateadas con sus respectivos links de Google en el siguiente formato para todas por igual:
 
-Item 1
-URL: [https://www.google.com/search?q=slug-del-titulo-1]
-Título: [Título de la noticia 1]
-Resumen: [Resumen de la noticia 1]
-
-Item 2
-URL: [https://www.google.com/search?q=slug-del-titulo-2]
-Título: [Título de la noticia 2]
-Resumen: [Resumen de la noticia 2]
-
-Item 3
-URL: [https://www.google.com/search?q=slug-del-titulo-3]
-Título: [Título de la noticia 3]
-Resumen: [Resumen de la noticia 3]
+Item [Numero de la noticia]
+URL: [https://www.google.com/search?q=slug-del-titulo]
+Título: [Título de la noticia]
+Resumen: [Resumen de la noticia]
