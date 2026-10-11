@@ -1,0 +1,2 @@
+Crea una app funcional con 3 inputs para el usuario: Sector, Región y Fecha. Utiliza los inputs para buscar 3 noticias relevantes y filtrar los resultados.
+Muestra las noticias en cards que contengan: Título, Fuente, Fecha, Resumen y Link original.
