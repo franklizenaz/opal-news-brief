@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARI NEWS | Inteligencia de Negocios</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            500: '#0ea5e9',
+                            950: '#020617',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-[#020617] text-gray-100 font-sans antialiased selection:bg-brand-500/30">
+
+    <!-- Header -->
+    <header class="fixed top-0 w-full z-50 glass border-b border-white/10 px-6 py-4 flex items-end gap-4">
+        <h1 class="text-3xl font-bold font-display tracking-tight text-white">ARI <span class="text-gradient">NEWS</span></h1>
+        <p class="text-xs uppercase tracking-widest text-gray-400 font-medium pb-1">Inteligencia de Negocios</p>
+    </header>
+
+    <main class="pt-24 pb-12 max-w-5xl mx-auto px-4 md:px-6">
+        
+        <!-- Hero Section -->
+        <section class="mb-8 rounded-3xl overflow-hidden shadow-2xl shadow-blue-500/10 border border-white/10">
+            <img src='https://opal.google/board/blobs/0264f564-4db0-4f98-b60b-553bed19f682' alt='Análisis de mercado' class="w-full h-[400px] object-cover transition-transform duration-700 hover:scale-105" />
+        </section>
+
+        <!-- Context Pills -->
+        <div class="flex gap-3 mb-12">
+            <span class="px-4 py-1.5 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-400 text-xs font-bold tracking-wider">TECNOLOGÍA</span>
+            <span class="px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-gray-300 text-xs font-bold tracking-wider">PERÚ</span>
+        </div>
+
+        <!-- News Feed -->
+        <div class="space-y-6">
+            <h2 class="text-2xl font-display font-semibold mb-8 text-white/90">Últimos Informes</h2>
+            
+            <!-- Items Rendered Dynamically via HTML structure -->
+            <div id="feed" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Item 1 -->
+                <article class="glass p-6 rounded-2xl hover:border-brand-500/50 transition-all duration-300 group">
+                    <span class="text-brand-500/60 font-mono text-sm block mb-2">01/20</span>
+                    <h3 class="font-display font-semibold text-lg text-white mb-3 group-hover:text-brand-400 transition-colors">Expansión masiva de la red 5G en zonas rurales del Perú</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">El Ministerio de Transportes y Comunicaciones anunció que la cobertura 5G alcanzó al 65% de los distritos rurales, facilitando el acceso a telemedicina y educación remota en comunidades previamente aisladas.</p>
+                    <a href="https://www.google.com/search?q=expansion-masiva-de-la-red-5g-en-zonas-rurales-del-peru" target="_blank" class="text-sm text-brand-400 hover:text-white transition-colors">Acceder a la Fuente →</a>
+                </article>
+
+                <!-- Item 2 -->
+                <article class="glass p-6 rounded-2xl hover:border-brand-500/50 transition-all duration-300 group">
+                    <span class="text-brand-500/60 font-mono text-sm block mb-2">02/20</span>
+                    <h3 class="font-display font-semibold text-lg text-white mb-3 group-hover:text-brand-400 transition-colors">Congreso aprueba la Ley de Ética y Transparencia en Inteligencia Artificial</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">Se estableció un marco regulatorio para el uso de algoritmos en el sector público y privado, priorizando la protección de datos personales y la rendición de cuentas en sistemas automatizados.</p>
+                    <a href="https://www.google.com/search?q=congreso-aprueba-la-ley-de-etica-y-transparencia-en-inteligencia-artificial" target="_blank" class="text-sm text-brand-400 hover:text-white transition-colors">Acceder a la Fuente →</a>
+                </article>
+
+                <!-- Item 3 -->
+                <article class="glass p-6 rounded-2xl hover:border-brand-500/50 transition-all duration-300 group">
+                    <span class="text-brand-500/60 font-mono text-sm block mb-2">03/20</span>
+                    <h3 class="font-display font-semibold text-lg text-white mb-3 group-hover:text-brand-400 transition-colors">BCRP inicia pruebas cerradas del "Sol Digital"</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">El Banco Central de Reserva del Perú comenzó la fase piloto de su moneda digital minorista (CBDC) para evaluar su impacto en la inclusión financiera y la reducción del uso de efectivo.</p>
+                    <a href="https://www.google.com/search?q=bcrp-inicia-pruebas-cerradas-del-sol-digital" target="_blank" class="text-sm text-brand-400 hover:text-white transition-colors">Acceder a la Fuente →</a>
+                </article>
+
+                <!-- Item 4 -->
+                <article class="glass p-6 rounded-2xl hover:border-brand-500/50 transition-all duration-300 group">
+                    <span class="text-brand-500/60 font-mono text-sm block mb-2">04/20</span>
+                    <h3 class="font-display font-semibold text-lg text-white mb-3 group-hover:text-brand-400 transition-colors">Inauguración del nuevo Data Center regional de AWS en Lima</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">Amazon Web Services puso en marcha su infraestructura de baja latencia en la capital peruana, lo que permitirá a las empresas locales acelerar su migración a la nube con estándares globales de seguridad.</p>
+                    <a href="https://www.google.com/search?q=inauguracion-del-nuevo-data-center-regional-de-aws-en-lima" target="_blank" class="text-sm text-brand-400 hover:text-white transition-colors">Acceder a la Fuente →</a>
+                </article>
+
+                <!-- Item 5 -->
+                <article class="glass p-6 rounded-2xl hover:border-brand-500/50 transition-all duration-300 group">
+                    <span class="text-brand-500/60 font-mono text-sm block mb-2">05/20</span>
+                    <h3 class="font-display font-semibold text-lg text-white mb-3 group-hover:text-brand-400 transition-colors">Startup peruana de biotecnología recauda 40 millones de dólares</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">La empresa "BioTech-Andina" cerró una exitosa ronda de inversión Serie B para expandir sus soluciones de agricultura sostenible y edición genética de cultivos nativos en la región.</p>
+                    <a href="https://www.google.com/search?q=startup-peruana-de-biotecnologia-recauda-40-millones-de-dolares" target="_blank" class="text-sm text-brand-400 hover:text-white transition-colors">Acceder a la Fuente →</a>
+                </article>
+
+                <!-- Item 6 -->
+                <article class="glass p-6 rounded-2xl hover:border-brand-500/50 transition-all duration-300 group">
+                    <span class="text-brand-500/60 font-mono text-sm block mb-2">06/20</span>
+                    <h3 class="font-display font-semibold text-lg text-white mb-3 group-hover:text-brand-400 transition-colors">Implementación de identidad digital única mediante biometría facial</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">Reniec lanzó una plataforma que permite a los ciudadanos realizar trámites notariales complejos desde dispositivos móviles, utilizando validación biométrica en tiempo real conectada a la base de datos nacional.</p>
+                    <a href="https://www.google.com/search?q=implementacion-de-identidad-digital-unica-mediante-biometria-facial" target="_blank" class="text-sm text-brand-400 hover:text-white transition-colors">Acceder a la Fuente →</a>
+                </article>
+
+                <!-- Item 7 -->
+                <article class="glass p-6 rounded-2xl hover:border-brand-500/50 transition-all duration-300 group">
+                    <span class="text-brand-500/60 font-mono text-sm block mb-2">07/20</span>
+                    <h3 class="font-display font-semibold text-lg text-white mb-3 group-hover:text-brand-400 transition-colors">Alianza entre Starlink y Minedu conecta 5,000 escuelas amazónicas</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">El programa gubernamental busca cerrar la brecha digital en las zonas más remotas de la selva peruana mediante la instalación de terminales satelitales de alta velocidad.</p>
+                    <a href="https://www.google.com/search?q=alianza-entre-starlink-y-minedu-conecta-5000-escuelas-amazonicas" target="_blank" class="text-sm text-brand-400 hover:text-white transition-colors">Acceder a la Fuente →</a>
+                </article>
+
+                <!-- Item 8 -->
+                <article class="glass p-6 rounded-2xl hover:border-brand-500/50 transition-all duration-300 group">
+                    <span class="text-brand-500/60 font-mono text-sm block mb-2">08/20</span>
+                    <h3 class="font-display font-semibold text-lg text-white mb-3 group-hover:text-brand-400 transition-colors">Lanzamiento del Hub de Innovación Minera 4.0 en Arequipa</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">Un consorcio de empresas tecnológicas y mineras inauguró un centro dedicado exclusivamente a la automatización, el uso de gemelos digitales y la operación remota de yacimientos.</p>
+                    <a href="https://www.google.com/search?q=lanzamiento-del-hub-de-innovacion-minera-40-en-arequipa" target="_blank" class="text-sm text-brand-400 hover:text-white transition-colors">Acceder a la Fuente →</a>
+                </article>
+
+                <!-- Item 9 -->
+                <article class="glass p-6 rounded-2xl hover:border-brand-500/50 transition-all duration-300 group">
+                    <span class="text-brand-500/60 font-mono text-sm block mb-2">09/20</span>
+                    <h3 class="font-display font-semibold text-lg text-white mb-3 group-hover:text-brand-400 transition-colors">Google Cloud expande su red de fibra óptica submarina hacia el puerto del Callao</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">El nuevo cable submarino mejorará significativamente la velocidad de conexión internacional del Perú y aumentará la capacidad de procesamiento de datos para el sector corporativo.</p>
+                    <a href="https://www.google.com/search?q=google-cloud-expande-su-red-de-fibra-optica-submarina-hacia-el-puerto-del-callao" target="_blank" class="text-sm text-brand-400 hover:text-white transition-colors">Acceder a la Fuente →</a>
+                </article>
+
+                <!-- Item 10 -->
+                <article class="glass p-6 rounded-2xl hover:border-brand-500/50 transition-all duration-300 group">
+                    <span class="text-brand-500/60 font-mono text-sm block mb-2">10/20</span>
+                    <h3 class="font-display font-semibold text-lg text-white mb-3 group-hover:text-brand-400 transition-colors">Éxito en la interoperabilidad total de billeteras digitales a nivel nacional</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">Por primera vez, todas las billeteras electrónicas y entidades bancarias en Perú operan bajo un sistema unificado que permite transferencias instantáneas gratuitas entre cualquier plataforma.</p>
+                    <a href="https://www.google.com/search?q=exito-en-la-interoperabilidad-total-de-billeteras-digitales-a-nivel-nacional" target="_blank" class="text-sm text-brand-400 hover:text-white transition-colors">Acceder a la Fuente →</a>
+                </article>
+
+                <!-- Item 11 -->
+                <article class="glass p-6 rounded-2xl hover:border-brand-500/50 transition-all duration-300 group">
+                    <span class="text-brand-500/60 font-mono text-sm block mb-2">11/20</span>
+                    <h3 class="font-display font-semibold text-lg text-white mb-3 group-hover:text-brand-400 transition-colors">Presentación de la Estrategia Nacional de Ciberseguridad 2026-2030</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">El Gobierno peruano detalló los nuevos protocolos para proteger la infraestructura crítica nacional contra ataques de ransomware y garantizar la soberanía de los datos estatales.</p>
+                    <a href="https://www.google.com/search?q=presentacion-de-la-estrategia-nacional-de-ciberseguridad-20262030" target="_blank" class="text-sm text-brand-400 hover:text-white transition-colors">Acceder a la Fuente →</a>
+                </article>
+
+                <!-- Item 12 -->
+                <article class="glass p-6 rounded-2xl hover:border-brand-500/50 transition-all duration-300 group">
+                    <span class="text-brand-500/60 font-mono text-sm block mb-2">12/20</span>
+                    <h3 class="font-display font-semibold text-lg text-white mb-3 group-hover:text-brand-400 transition-colors">Telemedicina con IA llega a los centros de salud de nivel 1</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">El Ministerio de Salud integró herramientas de inteligencia artificial para el triaje y diagnóstico preventivo en postas médicas de provincias, optimizando la atención de pacientes.</p>
+                    <a href="https://www.google.com/search?q=telemedicina-con-ia-llega-a-los-centros-de-salud-de-nivel-1" target="_blank" class="text-sm text-brand-400 hover:text-white transition-colors">Acceder a la Fuente →</a>
+                </article>
+
+                <!-- Item 13 -->
+                <article class="glass p-6 rounded-2xl hover:border-brand-500/50 transition-all duration-300 group">
+                    <span class="text-brand-500/60 font-mono text-sm block mb-2">13/20</span>
+                    <h3 class="font-display font-semibold text-lg text-white mb-3 group-hover:text-brand-400 transition-colors">Crecimiento del 30% en el mercado de vehículos eléctricos en Lima</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">Gracias a la nueva ley de incentivos fiscales y la ampliación de la red de cargadores rápidos, la adopción de electromovilidad alcanzó cifras récord este trimestre.</p>
+                    <a href="https://www.google.com/search?q=crecimiento-del-30-en-el-mercado-de-vehiculos-electricos-en-lima" target="_blank" class="text-sm text-brand-400 hover:text-white transition-colors">Acceder a la Fuente →</a>
+                </article>
+
+                <!-- Item 14 -->
+                <article class="glass p-6 rounded-2xl hover:border-brand-500/50 transition-all duration-300 group">
+                    <span class="text-brand-500/60 font-mono text-sm block mb-2">14/20</span>
+                    <h3 class="font-display font-semibold text-lg text-white mb-3 group-hover:text-brand-400 transition-colors">Primer laboratorio de computación cuántica inaugurado en la UNI</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">La Universidad Nacional de Ingeniería presentó un centro de investigación especializado para desarrollar algoritmos cuánticos aplicados a la resolución de problemas de logística nacional.</p>
+                    <a href="https://www.google.com/search?q=primer-laboratorio-de-computacion-cuantica-inaugurado-en-la-uni" target="_blank" class="text-sm text-brand-400 hover:text-white transition-colors">Acceder a la Fuente →</a>
+                </article>
+
+                <!-- Item 15 -->
+                <article class="glass p-6 rounded-2xl hover:border-brand-500/50 transition-all duration-300 group">
+                    <span class="text-brand-500/60 font-mono text-sm block mb-2">15/20</span>
+                    <h3 class="font-display font-semibold text-lg text-white mb-3 group-hover:text-brand-400 transition-colors">Fintech peruana "Kipu-Pay" alcanza la categoría de Unicornio</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">Tras su exitosa expansión a los mercados de México y Colombia, la fintech de pagos digitales superó la valoración de mil millones de dólares, marcando un hito en el ecosistema local.</p>
+                    <a href="https://www.google.com/search?q=fintech-peruana-kipupay-alcanza-la-categoria-de-unicornio" target="_blank" class="text-sm text-brand-400 hover:text-white transition-colors">Acceder a la Fuente →</a>
+                </article>
+
+                <!-- Item 16 -->
+                <article class="glass p-6 rounded-2xl hover:border-brand-500/50 transition-all duration-300 group">
+                    <span class="text-brand-500/60 font-mono text-sm block mb-2">16/20</span>
+                    <h3 class="font-display font-semibold text-lg text-white mb-3 group-hover:text-brand-400 transition-colors">Implementación de Blockchain en la gestión de Registros Públicos</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">La Sunarp comenzó a utilizar tecnología de cadena de bloques para garantizar la inmutabilidad de los títulos de propiedad y reducir drásticamente el fraude inmobiliario.</p>
+                    <a href="https://www.google.com/search?q=implementacion-de-blockchain-en-la-gestion-de-registros-publicos" target="_blank" class="text-sm text-brand-400 hover:text-white transition-colors">Acceder a la Fuente →</a>
+                </article>
+
+                <!-- Item 17 -->
+                <article class="glass p-6 rounded-2xl hover:border-brand-500/50 transition-all duration-300 group">
+                    <span class="text-brand-500/60 font-mono text-sm block mb-2">17/20</span>
+                    <h3 class="font-display font-semibold text-lg text-white mb-3 group-hover:text-brand-400 transition-colors">Feria Internacional de Tecnología de Lima atrae a 200,000 visitantes</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">El evento tecnológico más grande del país cerró con acuerdos comerciales millonarios en sectores de robótica industrial y desarrollo de software para exportación.</p>
+                    <a href="https://www.google.com/search?q=feria-internacional-de-tecnologia-de-lima-atrae-a-200000-visitantes" target="_blank" class="text-sm text-brand-400 hover:text-white transition-colors">Acceder a la Fuente →</a>
+                </article>
+
+                <!-- Item 18 -->
+                <article class="glass p-6 rounded-2xl hover:border-brand-500/50 transition-all duration-300 group">
+                    <span class="text-brand-500/60 font-mono text-sm block mb-2">18/20</span>
+                    <h3 class="font-display font-semibold text-lg text-white mb-3 group-hover:text-brand-400 transition-colors">Programa nacional de capacitación en programación "Perú Programa"</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">El Ministerio de Trabajo lanzó una beca masiva para certificar a 50,000 jóvenes en lenguajes de programación de alta demanda, buscando cubrir la brecha de talento técnico.</p>
+                    <a href="https://www.google.com/search?q=programa-nacional-de-capacitacion-en-programacion-peru-programa" target="_blank" class="text-sm text-brand-400 hover:text-white transition-colors">Acceder a la Fuente →</a>
+                </article>
+
+                <!-- Item 19 -->
+                <article class="glass p-6 rounded-2xl hover:border-brand-500/50 transition-all duration-300 group">
+                    <span class="text-brand-500/60 font-mono text-sm block mb-2">19/20</span>
+                    <h3 class="font-display font-semibold text-lg text-white mb-3 group-hover:text-brand-400 transition-colors">Nueva normativa sobre economía circular para residuos electrónicos</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">Se aprobó una ley que exige a los fabricantes y distribuidores de tecnología implementar sistemas obligatorios de recojo y reciclaje de hardware en desuso en todo el territorio nacional.</p>
+                    <a href="https://www.google.com/search?q=nueva-normativa-sobre-economia-circular-para-residuos-electronicos" target="_blank" class="text-sm text-brand-400 hover:text-white transition-colors">Acceder a la Fuente →</a>
+                </article>
+
+                <!-- Item 20 -->
+                <article class="glass p-6 rounded-2xl hover:border-brand-500/50 transition-all duration-300 group">
+                    <span class="text-brand-500/60 font-mono text-sm block mb-2">20/20</span>
+                    <h3 class="font-display font-semibold text-lg text-white mb-3 group-hover:text-brand-400 transition-colors">Lima seleccionada como sede del Foro Mundial de Ciudades Inteligentes 2027</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">La elección destaca los avances de la capital en la implementación de semáforos inteligentes, gestión de residuos basada en IoT y transporte público conectado.</p>
+                    <a href="https://www.google.com/search?q=lima-seleccionada-como-sede-del-foro-mundial-de-ciudades-inteligentes-2027" target="_blank" class="text-sm text-brand-400 hover:text-white transition-colors">Acceder a la Fuente →</a>
+                </article>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>
