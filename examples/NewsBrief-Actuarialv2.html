@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsBrief | Inteligencia de Negocios</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            900: '#0c4a6e',
+                        },
+                        dark: '#0f172a',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen antialiased">
+
+    <main class="max-w-5xl mx-auto px-4 py-8">
+        
+        <!-- Header -->
+        <header class="mb-12 border-b border-slate-800 pb-8 flex justify-between items-end">
+            <div>
+                <h1 class="text-5xl font-extrabold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">NewsBrief</h1>
+                <p class="text-slate-400 uppercase tracking-widest text-sm mt-1">Inteligencia de Negocios</p>
+            </div>
+            <div class="text-slate-500 font-mono text-sm">
+                [2026-05-01]
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+            <div class="rounded-3xl overflow-hidden shadow-2xl h-full">
+                <img src='https://opal.google/board/blobs/3da1a21a-13be-477a-86c5-bd5c1668becc' alt='media_1' class="w-full h-full object-cover" />
+            </div>
+            <article class="glass p-8 rounded-3xl">
+                <h2 class="text-2xl font-bold mb-6 text-blue-100">Resumen Ejecutivo: Sector Asegurador y Previsional en Perú (Mayo 2026)</h2>
+                <p class="text-slate-300 leading-relaxed mb-6">
+                    El sector en Perú atraviesa una fase de ajuste normativo y técnico liderado por la SBS para fortalecer la solvencia y mitigar riesgos operativos ante la novena licitación del SISCO. Mientras la siniestralidad aumenta un 2.2% en ramos de salud y accidentes, la estabilidad de las reservas técnicas enfrenta la presión de una nueva propuesta legislativa para un noveno retiro de fondos previsionales.
+                </p>
+                <div class="space-y-4">
+                    <div class="border-l-2 border-emerald-500 pl-4">
+                        <h4 class="font-semibold text-emerald-400">Conclusiones</h4>
+                        <ul class="text-sm text-slate-400 space-y-1 mt-2 list-disc ml-4">
+                            <li>Viabilidad actuarial bajo amenaza por retiro de 4 UIT.</li>
+                            <li>Priorización de resiliencia financiera por parte del regulador.</li>
+                            <li>Brecha crítica en protección de activos estatales (&lt;6%).</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Feed Section -->
+        <section class="mb-20">
+            <h3 class="text-2xl font-bold mb-8 text-slate-200">Actualidad del Sector</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                
+                <!-- Item 1 -->
+                <div class="glass p-6 rounded-2xl hover:border-blue-500/50 transition-all duration-300">
+                    <h4 class="font-semibold text-lg mb-2">SBS fortalece las reglas del seguro previsional para la novena licitación</h4>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-[10px] bg-blue-900/50 px-2 py-1 rounded">SISCO</span>
+                        <span class="text-[10px] bg-blue-900/50 px-2 py-1 rounded">LICITACIÓN</span>
+                        <span class="text-[10px] bg-blue-900/50 px-2 py-1 rounded">SBS</span>
+                    </div>
+                    <a href="https://google.com" target="_blank" class="text-blue-400 text-sm hover:underline">Buscar en Google →</a>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="glass p-6 rounded-2xl hover:border-blue-500/50 transition-all duration-300">
+                    <h4 class="font-semibold text-lg mb-2">SBS amplía a 72 meses el plazo para otorgar pensiones preliminares</h4>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-[10px] bg-blue-900/50 px-2 py-1 rounded">PENSIONES</span>
+                        <span class="text-[10px] bg-blue-900/50 px-2 py-1 rounded">SBS</span>
+                        <span class="text-[10px] bg-blue-900/50 px-2 py-1 rounded">JUDICIAL</span>
+                    </div>
+                    <a href="https://google.com" target="_blank" class="text-blue-400 text-sm hover:underline">Buscar en Google →</a>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="glass p-6 rounded-2xl hover:border-blue-500/50 transition-all duration-300">
+                    <h4 class="font-semibold text-lg mb-2">Establecen procedimiento para elección de esquema de comisiones en las AFP</h4>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-[10px] bg-blue-900/50 px-2 py-1 rounded">AFP</span>
+                        <span class="text-[10px] bg-blue-900/50 px-2 py-1 rounded">COMISIONES</span>
+                        <span class="text-[10px] bg-blue-900/50 px-2 py-1 rounded">SPP</span>
+                    </div>
+                    <a href="https://google.com" target="_blank" class="text-blue-400 text-sm hover:underline">Buscar en Google →</a>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="glass p-6 rounded-2xl hover:border-blue-500/50 transition-all duration-300">
+                    <h4 class="font-semibold text-lg mb-2">Actualización del capital social mínimo para empresas de seguros</h4>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-[10px] bg-blue-900/50 px-2 py-1 rounded">CAPITAL MÍNIMO</span>
+                        <span class="text-[10px] bg-blue-900/50 px-2 py-1 rounded">SOLVENCIA</span>
+                        <span class="text-[10px] bg-blue-900/50 px-2 py-1 rounded">SEGUROS</span>
+                    </div>
+                    <a href="https://google.com" target="_blank" class="text-blue-400 text-sm hover:underline">Buscar en Google →</a>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="glass p-6 rounded-2xl hover:border-blue-500/50 transition-all duration-300">
+                    <h4 class="font-semibold text-lg mb-2">Sector asegurador peruano alcanza penetración del 2.01% del PBI</h4>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-[10px] bg-blue-900/50 px-2 py-1 rounded">APESEG</span>
+                        <span class="text-[10px] bg-blue-900/50 px-2 py-1 rounded">ESTADÍSTICAS</span>
+                        <span class="text-[10px] bg-blue-900/50 px-2 py-1 rounded">PBI</span>
+                    </div>
+                    <a href="https://google.com" target="_blank" class="text-blue-400 text-sm hover:underline">Buscar en Google →</a>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="glass p-6 rounded-2xl hover:border-blue-500/50 transition-all duration-300">
+                    <h4 class="font-semibold text-lg mb-2">Congreso evalúa nuevo proyecto para un noveno retiro de fondos</h4>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-[10px] bg-blue-900/50 px-2 py-1 rounded">AFP</span>
+                        <span class="text-[10px] bg-blue-900/50 px-2 py-1 rounded">RETIRO</span>
+                        <span class="text-[10px] bg-blue-900/50 px-2 py-1 rounded">CONGRESO</span>
+                    </div>
+                    <a href="https://google.com" target="_blank" class="text-blue-400 text-sm hover:underline">Buscar en Google →</a>
+                </div>
+
+                <!-- Item 7 -->
+                <div class="glass p-6 rounded-2xl hover:border-blue-500/50 transition-all duration-300">
+                    <h4 class="font-semibold text-lg mb-2">SBS publica proyecto normativo para el Sistema de Finanzas Abiertas</h4>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-[10px] bg-blue-900/50 px-2 py-1 rounded">OPEN FINANCE</span>
+                        <span class="text-[10px] bg-blue-900/50 px-2 py-1 rounded">DIGITALIZACIÓN</span>
+                        <span class="text-[10px] bg-blue-900/50 px-2 py-1 rounded">SBS</span>
+                    </div>
+                    <a href="https://google.com" target="_blank" class="text-blue-400 text-sm hover:underline">Buscar en Google →</a>
+                </div>
+
+                <!-- Item 8 -->
+                <div class="glass p-6 rounded-2xl hover:border-blue-500/50 transition-all duration-300">
+                    <h4 class="font-semibold text-lg mb-2">APESEG propone Plan Integral de Gestión de Riesgos</h4>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-[10px] bg-blue-900/50 px-2 py-1 rounded">GESTIÓN DE RIESGOS</span>
+                        <span class="text-[10px] bg-blue-900/50 px-2 py-1 rounded">INFRAESTRUCTURA</span>
+                        <span class="text-[10px] bg-blue-900/50 px-2 py-1 rounded">APESEG</span>
+                    </div>
+                    <a href="https://google.com" target="_blank" class="text-blue-400 text-sm hover:underline">Buscar en Google →</a>
+                </div>
+
+                <!-- Item 9 -->
+                <div class="glass p-6 rounded-2xl hover:border-blue-500/50 transition-all duration-300">
+                    <h4 class="font-semibold text-lg mb-2">Expertos globales analizan en Lima retos de supervisión financiera</h4>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-[10px] bg-blue-900/50 px-2 py-1 rounded">BASILEA</span>
+                        <span class="text-[10px] bg-blue-900/50 px-2 py-1 rounded">SUPERVISIÓN</span>
+                        <span class="text-[10px] bg-blue-900/50 px-2 py-1 rounded">RIESGO CLIMÁTICO</span>
+                    </div>
+                    <a href="https://google.com" target="_blank" class="text-blue-400 text-sm hover:underline">Buscar en Google →</a>
+                </div>
+
+                <!-- Item 10 -->
+                <div class="glass p-6 rounded-2xl hover:border-blue-500/50 transition-all duration-300">
+                    <h4 class="font-semibold text-lg mb-2">Siniestralidad en el sector seguros supera los 9,800 millones de soles</h4>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-[10px] bg-blue-900/50 px-2 py-1 rounded">SINIESTROS</span>
+                        <span class="text-[10px] bg-blue-900/50 px-2 py-1 rounded">SEGUROS</span>
+                        <span class="text-[10px] bg-blue-900/50 px-2 py-1 rounded">INDEMNIZACIONES</span>
+                    </div>
+                    <a href="https://google.com" target="_blank" class="text-blue-400 text-sm hover:underline">Buscar en Google →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center space-y-4 py-12 border-t border-slate-800">
+            <p class="text-slate-500 text-sm italic">Desarrollado por Frankli Zeña</p>
+            <div class="font-bold text-lg tracking-tight">NewsBrief – Inmersión ONE: Agentes de IA para Negocios</div>
+            <div class="w-32 mx-auto pt-4 grayscale opacity-50">
+                <img src='https://opal.google/board/blobs/3da1a21a-13be-477a-86c5-bd5c1668becc' alt='media_2' class="w-full" />
+            </div>
+        </footer>
+
+    </main>
+
+</body>
+</html>

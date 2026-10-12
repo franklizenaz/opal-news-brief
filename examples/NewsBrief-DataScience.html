@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsBrief | Inteligencia de Negocios</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        background: '#0a0a0c',
+                        surface: '#161619',
+                        primary: '#3b82f6',
+                        accent: '#8b5cf6',
+                        text: '#f4f4f5',
+                        muted: '#a1a1aa'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+        body { background-color: #0a0a0c; color: #f4f4f5; }
+        .glass { background: rgba(22, 22, 25, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .gradient-text { background: linear-gradient(90deg, #3b82f6, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .card-hover:hover { transform: translateY(-5px); transition: transform 0.3s ease; border-color: rgba(59, 130, 246, 0.5); }
+    </style>
+</head>
+<body class="antialiased selection:bg-primary selection:text-white">
+
+    <!-- Header -->
+    <header class="p-6 md:px-12 flex justify-between items-end border-b border-white/10">
+        <div>
+            <h1 class="text-4xl font-extrabold tracking-tighter text-white">NewsBrief</h1>
+            <p class="text-sm text-primary font-medium tracking-widest uppercase mt-1">Inteligencia de Negocios</p>
+        </div>
+        <div class="text-right">
+            <span class="text-xs font-mono text-muted bg-white/5 px-3 py-1 rounded-full">2026-05-01</span>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto p-6 md:p-12">
+        <!-- Hero Section -->
+        <section class="grid lg:grid-cols-2 gap-12 items-center mb-20">
+            <div class="rounded-3xl overflow-hidden shadow-2xl shadow-blue-500/10">
+                <img src='https://opal.google/board/blobs/98c7c113-b91d-41b7-b31e-49c79d2a5965' alt='media_1' class="w-full h-full object-cover aspect-[4/3]" />
+            </div>
+            <div class="space-y-6">
+                <h2 class="text-3xl md:text-5xl font-bold leading-tight">Inteligencia Ejecutiva: <span class="gradient-text">Data Science en Perú</span></h2>
+                <p class="text-lg text-muted leading-relaxed">
+                    El sector de Data Science en Perú experimenta una fase de consolidación estructural impulsada por la actualización de la Estrategia Nacional de IA y la inauguración del primer centro de supercomputación. La adopción se diversifica hacia industrias críticas como la agroexportación y fintech.
+                </p>
+                <div class="p-6 bg-white/5 rounded-2xl border border-white/10">
+                    <h4 class="font-bold mb-3 text-white uppercase text-sm tracking-wider">¿Pregunta Clave?</h4>
+                    <p class="italic text-primary">"¿Cuáles serán los requerimientos técnicos específicos que establecerá la reglamentación de la nueva ley para los algoritmos de decisión automatizada en el sector financiero?"</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Insights Grid -->
+        <section class="grid md:grid-cols-2 gap-8 mb-20">
+            <div class="glass p-8 rounded-3xl">
+                <h3 class="text-xl font-bold mb-4">Conclusiones</h3>
+                <ul class="space-y-3 text-muted text-sm">
+                    <li>• Arequipa como segundo hub tecnológico: descentralización efectiva del talento.</li>
+                    <li>• Modelos predictivos en agricultura: retornos de inversión tangibles.</li>
+                    <li>• Demanda Fintech: 40% más de búsqueda de especialistas en Machine Learning.</li>
+                </ul>
+            </div>
+            <div class="glass p-8 rounded-3xl">
+                <h3 class="text-xl font-bold mb-4">Implicaciones</h3>
+                <ul class="space-y-3 text-muted text-sm">
+                    <li>• <strong class="text-white">Oportunidad:</strong> Atracción de capital para startups logísticas validadas.</li>
+                    <li>• <strong class="text-white">Riesgo:</strong> Nueva normativa de ética algorítmica exige auditoría de decisiones.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Feed Section -->
+        <section>
+            <h2 class="text-2xl font-bold mb-8">Feed de Noticias</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Item 1 -->
+                <div class="glass p-6 rounded-2xl card-hover">
+                    <span class="text-[10px] bg-blue-500/20 text-blue-300 px-2 py-1 rounded">ESTRATEGIA NACIONAL</span>
+                    <h3 class="font-semibold text-white mt-3 mb-4">Lanzamiento de la Estrategia Nacional de Inteligencia Artificial 2.0 en Perú</h3>
+                    <a href="https://www.google.com/search?q=lanzamiento-de-la-estrategia-nacional-de-inteligencia-artificial-20-en-peru" target="_blank" class="text-xs text-primary hover:underline">Buscar en Google →</a>
+                </div>
+                <!-- Item 2 -->
+                <div class="glass p-6 rounded-2xl card-hover">
+                    <span class="text-[10px] bg-purple-500/20 text-purple-300 px-2 py-1 rounded">AREQUIPA</span>
+                    <h3 class="font-semibold text-white mt-3 mb-4">Arequipa se consolida como el segundo hub de Data Science en el país</h3>
+                    <a href="https://www.google.com/search?q=arequipa-se-consolida-como-el-segundo-hub-de-data-science-en-el-pais" target="_blank" class="text-xs text-primary hover:underline">Buscar en Google →</a>
+                </div>
+                <!-- Item 3 -->
+                <div class="glass p-6 rounded-2xl card-hover">
+                    <span class="text-[10px] bg-blue-500/20 text-blue-300 px-2 py-1 rounded">UNMSM</span>
+                    <h3 class="font-semibold text-white mt-3 mb-4">Alianza entre la UNMSM y el MIT para investigación en Ciencia de Datos</h3>
+                    <a href="https://www.google.com/search?q=alianza-entre-la-unmsm-y-el-mit-para-investigacion-en-ciencia-de-datos" target="_blank" class="text-xs text-primary hover:underline">Buscar en Google →</a>
+                </div>
+                <!-- Item 4 -->
+                <div class="glass p-6 rounded-2xl card-hover">
+                    <span class="text-[10px] bg-green-500/20 text-green-300 px-2 py-1 rounded">AGROTECH</span>
+                    <h3 class="font-semibold text-white mt-3 mb-4">Implementación de modelos predictivos en la agricultura del Valle de Ica</h3>
+                    <a href="https://www.google.com/search?q=implementacion-de-modelos-predictivos-en-la-agricultura-del-valle-de-ica" target="_blank" class="text-xs text-primary hover:underline">Buscar en Google →</a>
+                </div>
+                <!-- Item 5 -->
+                <div class="glass p-6 rounded-2xl card-hover">
+                    <span class="text-[10px] bg-indigo-500/20 text-indigo-300 px-2 py-1 rounded">SUPERCOMPUTACIÓN</span>
+                    <h3 class="font-semibold text-white mt-3 mb-4">Inauguración del Primer Centro de Supercomputación para Análisis de Datos</h3>
+                    <a href="https://www.google.com/search?q=inauguracion-del-primer-centro-de-supercomputacion-para-analisis-de-datos" target="_blank" class="text-xs text-primary hover:underline">Buscar en Google →</a>
+                </div>
+                <!-- Item 6 -->
+                <div class="glass p-6 rounded-2xl card-hover">
+                    <span class="text-[10px] bg-blue-500/20 text-blue-300 px-2 py-1 rounded">FINTECH</span>
+                    <h3 class="font-semibold text-white mt-3 mb-4">Crecimiento del 40% en la demanda de especialistas en Data Science</h3>
+                    <a href="https://www.google.com/search?q=crecimiento-del-40-en-la-demanda-de-especialistas-en-data-science-en-el-sector-fintech" target="_blank" class="text-xs text-primary hover:underline">Buscar en Google →</a>
+                </div>
+                <!-- Item 7 -->
+                <div class="glass p-6 rounded-2xl card-hover">
+                    <span class="text-[10px] bg-red-500/20 text-red-300 px-2 py-1 rounded">REGULACIÓN</span>
+                    <h3 class="font-semibold text-white mt-3 mb-4">Nueva Ley de Protección de Datos Personales y Ética en Algoritmos</h3>
+                    <a href="https://www.google.com/search?q=nueva-ley-de-proteccion-de-datos-personales-y-etica-en-algoritmos" target="_blank" class="text-xs text-primary hover:underline">Buscar en Google →</a>
+                </div>
+                <!-- Item 8 -->
+                <div class="glass p-6 rounded-2xl card-hover">
+                    <span class="text-[10px] bg-yellow-500/20 text-yellow-300 px-2 py-1 rounded">STARTUP</span>
+                    <h3 class="font-semibold text-white mt-3 mb-4">Startup peruana de análisis de datos logísticos recibe inversión internacional</h3>
+                    <a href="https://www.google.com/search?q=startup-peruana-de-analisis-de-datos-logisticos-recibe-inversion-internacional" target="_blank" class="text-xs text-primary hover:underline">Buscar en Google →</a>
+                </div>
+                <!-- Item 9 -->
+                <div class="glass p-6 rounded-2xl card-hover">
+                    <span class="text-[10px] bg-green-500/20 text-green-300 px-2 py-1 rounded">AMAZONÍA</span>
+                    <h3 class="font-semibold text-white mt-3 mb-4">Aplicación de Data Science para la conservación de la Amazonía peruana</h3>
+                    <a href="https://www.google.com/search?q=aplicacion-de-data-science-para-la-conservacion-de-la-amazonia-peruana" target="_blank" class="text-xs text-primary hover:underline">Buscar en Google →</a>
+                </div>
+                <!-- Item 10 -->
+                <div class="glass p-6 rounded-2xl card-hover">
+                    <span class="text-[10px] bg-purple-500/20 text-purple-300 px-2 py-1 rounded">DATA SCIENCE WEEK</span>
+                    <h3 class="font-semibold text-white mt-3 mb-4">Realización de la Data Science Week 2026 en Lima</h3>
+                    <a href="https://www.google.com/search?q=realizacion-de-la-data-science-week-2026-en-lima" target="_blank" class="text-xs text-primary hover:underline">Buscar en Google →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final section -->
+        <section class="mt-20 pt-10 border-t border-white/10 flex flex-col items-center text-center space-y-6">
+            <div class="w-32 h-32 rounded-full overflow-hidden border-2 border-primary p-1">
+                <img src='https://opal.google/board/blobs/98c7c113-b91d-41b7-b31e-49c79d2a5965' alt='media_2' class="w-full h-full object-cover rounded-full" />
+            </div>
+            <div>
+                <p class="text-muted text-sm">Desarrollado por Frankli Zeña</p>
+                <h3 class="text-xl font-bold tracking-tight">NewsBrief – Inmersión ONE: Agentes de IA para Negocios</h3>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

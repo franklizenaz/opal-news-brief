@@ -8,21 +8,28 @@ Estructura (en este orden, nada más):
 
 3. Barra de contexto: dos tags rectangulares en mayúsculas con [Sector] y [Región].
 
-4. Feed: exactamente [Numero_noticias] tarjetas con los datos de news_data ([02-data-formatter]). Cada tarjeta, en este orden:
-   - Item [N] 
+4. Inteligencia ejecutiva: bloque inmediatamente después de la barra de contexto, con el análisis executive_analysis ([04-executive-analysis]), en este orden:
+   - Síntesis como párrafo de texto (#0D0D0D)
+   - Conclusiones: lista de 3 puntos (#555555)
+   - Implicaciones: lista de 2 puntos (#555555)
+   - Pregunta_vigilar en negrita (#0D0D0D)
+   Fondo #F9F9F9, alineado a la izquierda. Prohibido editar, resumir o inventar parte del análisis.
+
+5. Feed: exactamente [Numero_noticias] tarjetas con los datos de news_data ([02-data-formatter]). Cada tarjeta, en este orden:
+   - Item [N]
    - Título en negrita (#0D0D0D)
    - Resumen en texto secundario (#555555)
    - Keywords como tags rectangulares pequeños en mayúsculas
    - enlace discreto "Buscar en Google →" hacia la URL del ítem
    Una tarjeta por noticia: prohibido resumir, agrupar o inventar noticias.
 
-5. Pie: bloque a ancho completo con fondo #F9F9F9, alineado a la izquierda, con padding amplio y texto pequeño en #555555, en dos líneas:
+6. Pie: bloque a ancho completo con fondo #F9F9F9, alineado a la izquierda, con padding amplio y texto pequeño en #555555, en dos líneas:
    - Desarrollado por Frankli Zeña
    - **NewsBrief** – Inmersión ONE: Agentes de IA para Negocios
    Sin ©, sin iconos, sin enlaces, sin logo repetido.
 
-Fin: no agregues secciones adicionales.
+Las secciones 1 a 6 son obligatorias, todas deben estar presentes. Fin: no agregues secciones adicionales.
 
 Variables:
 User input: [Sector] [Región] [Fecha_noticias] [Numero_noticias]
-news_data = [02-data-formatter] · hero_image = [03-hero-image-generator]
+news_data = [02-data-formatter] · executive_analysis = [04-executive-analysis] · hero_image = [03-hero-image-generator]
