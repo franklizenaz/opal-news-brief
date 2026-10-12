@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsBrief | Inteligencia de Negocios</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        customDark: '#0D0D0D',
+                        customSecondary: '#555555',
+                        customBg: '#F9F9F9',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #ffffff; }
+        .tag { @apply px-3 py-1 bg-gray-100 text-gray-800 text-[10px] font-bold tracking-widest uppercase rounded-sm border border-gray-200; }
+        .card-tag { @apply px-2 py-0.5 bg-blue-50 text-blue-700 text-[9px] font-bold uppercase tracking-tight rounded-sm; }
+    </style>
+</head>
+<body class="text-customDark">
+
+    <!-- Header -->
+    <header class="max-w-5xl mx-auto px-6 py-10">
+        <h1 class="font-display font-extrabold text-4xl tracking-tighter">NewsBrief</h1>
+        <p class="text-sm text-customSecondary uppercase tracking-widest mt-1">Inteligencia de Negocios</p>
+        <div class="mt-4 text-[11px] text-gray-400 font-medium">2026-05-10</div>
+    </header>
+
+    <!-- Hero -->
+    <section class="w-full mb-12">
+        <img src='https://opal.google/board/blobs/d308b61d-a30c-4eb4-9861-4e728001bbc1' alt='media_2' class="w-full h-[400px] object-cover shadow-lg" />
+    </section>
+
+    <!-- Context Bar -->
+    <section class="max-w-5xl mx-auto px-6 mb-12 flex gap-3">
+        <span class="tag">Actuarial</span>
+        <span class="tag">Perú</span>
+    </section>
+
+    <!-- Feed -->
+    <main class="max-w-5xl mx-auto px-6 mb-20">
+        <div class="grid md:grid-cols-2 gap-x-12 gap-y-12">
+            
+            <!-- News Cards -->
+            <!-- Card 1 -->
+            <article class="flex flex-col">
+                <h3 class="text-xs font-bold text-gray-400 mb-2">Item 1</h3>
+                <h2 class="font-display font-bold text-xl leading-snug text-[#0D0D0D] mb-3">Fortalecimiento de las reglas del seguro previsional (SISCO) ante la 9ª licitación</h2>
+                <p class="text-customSecondary text-sm leading-relaxed mb-4">La SBS aprobó modificaciones al reglamento del SISCO para mitigar riesgos operacionales y prevenir conflictos de intereses previo a la nueva licitación, ampliando plazos para pensiones preliminares en casos judiciales.</p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="card-tag">SISCO</span><span class="card-tag">SBS</span><span class="card-tag">Seguro Previsional</span>
+                </div>
+                <a href="https://www.google.com/search?q=fortalecimiento-de-las-reglas-del-seguro-previsional-sisco-ante-la-9-licitacion" target="_blank" class="text-xs font-semibold text-blue-600 hover:underline">Buscar en Google →</a>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="flex flex-col">
+                <h3 class="text-xs font-bold text-gray-400 mb-2">Item 2</h3>
+                <h2 class="font-display font-bold text-xl leading-snug text-[#0D0D0D] mb-3">Proyecto de nuevo Reglamento de Gestión Actuarial para Empresas de Seguros</h2>
+                <p class="text-customSecondary text-sm leading-relaxed mb-4">La SBS presentó un proyecto para actualizar la normativa de gestión actuarial, buscando alinear la evaluación de reservas técnicas y las responsabilidades del Directorio con estándares internacionales de solvencia.</p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="card-tag">Gestión Actuarial</span><span class="card-tag">Reservas Técnicas</span><span class="card-tag">Solvencia</span>
+                </div>
+                <a href="https://www.google.com/search?q=proyecto-de-nuevo-reglamento-de-gestion-actuarial-para-empresas-de-seguros" target="_blank" class="text-xs font-semibold text-blue-600 hover:underline">Buscar en Google →</a>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="flex flex-col">
+                <h3 class="text-xs font-bold text-gray-400 mb-2">Item 3</h3>
+                <h2 class="font-display font-bold text-xl leading-snug text-[#0D0D0D] mb-3">Procedimiento para el cambio de esquema de comisiones en las AFP</h2>
+                <p class="text-customSecondary text-sm leading-relaxed mb-4">Se ha establecido el proceso administrativo para que los afiliados al Sistema Privado de Pensiones elijan entre la comisión por flujo o por saldo a partir de diciembre de 2026.</p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="card-tag">AFP</span><span class="card-tag">Comisiones</span><span class="card-tag">Sistema de Pensiones</span>
+                </div>
+                <a href="https://www.google.com/search?q=procedimiento-para-el-cambio-de-esquema-de-comisiones-en-las-afp" target="_blank" class="text-xs font-semibold text-blue-600 hover:underline">Buscar en Google →</a>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="flex flex-col">
+                <h3 class="text-xs font-bold text-gray-400 mb-2">Item 4</h3>
+                <h2 class="font-display font-bold text-xl leading-snug text-[#0D0D0D] mb-3">AFP Integra solicita reconversión bajo la nueva Ley de Modernización Previsional</h2>
+                <p class="text-customSecondary text-sm leading-relaxed mb-4">En el marco de la apertura del mercado previsional, AFP Integra ha solicitado transformarse en Empresa Administradora de Fondos, permitiendo una mayor competencia en la gestión de fondos y pensiones.</p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="card-tag">AFP Integra</span><span class="card-tag">Modernización Previsional</span><span class="card-tag">Fondos de Pensiones</span>
+                </div>
+                <a href="https://www.google.com/search?q=afp-integra-solicita-reconversion-bajo-la-nueva-ley-de-modernizacion-previsional" target="_blank" class="text-xs font-semibold text-blue-600 hover:underline">Buscar en Google →</a>
+            </article>
+
+            <!-- Card 5 -->
+            <article class="flex flex-col">
+                <h3 class="text-xs font-bold text-gray-400 mb-2">Item 5</h3>
+                <h2 class="font-display font-bold text-xl leading-snug text-[#0D0D0D] mb-3">Avances en la Plataforma Única de Afiliación y Traslados (PAST)</h2>
+                <p class="text-customSecondary text-sm leading-relaxed mb-4">La ONP y la SBS aprobaron los lineamientos de gobernanza para la nueva plataforma digital que centralizará y facilitará los traslados de afiliados entre el sistema público y privado.</p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="card-tag">PAST</span><span class="card-tag">Interoperabilidad</span><span class="card-tag">Afiliación</span>
+                </div>
+                <a href="https://www.google.com/search?q=avances-en-la-plataforma-unica-de-afiliacion-y-traslados-past" target="_blank" class="text-xs font-semibold text-blue-600 hover:underline">Buscar en Google →</a>
+            </article>
+
+            <!-- Card 6 -->
+            <article class="flex flex-col">
+                <h3 class="text-xs font-bold text-gray-400 mb-2">Item 6</h3>
+                <h2 class="font-display font-bold text-xl leading-snug text-[#0D0D0D] mb-3">Debate en el Congreso sobre un noveno retiro extraordinario de fondos AFP</h2>
+                <p class="text-customSecondary text-sm leading-relaxed mb-4">Se presentó una nueva propuesta legislativa para permitir el retiro de hasta 4 UIT de los fondos de pensiones, lo que ha generado alertas sobre el impacto en las tablas de mortalidad y suficiencia jubilatoria.</p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="card-tag">Retiro AFP</span><span class="card-tag">Congreso</span><span class="card-tag">Riesgo Previsional</span>
+                </div>
+                <a href="https://www.google.com/search?q=debate-en-el-congreso-sobre-un-noveno-retiro-extraordinario-de-fondos-afp" target="_blank" class="text-xs font-semibold text-blue-600 hover:underline">Buscar en Google →</a>
+            </article>
+
+            <!-- Card 7 -->
+            <article class="flex flex-col">
+                <h3 class="text-xs font-bold text-gray-400 mb-2">Item 7</h3>
+                <h2 class="font-display font-bold text-xl leading-snug text-[#0D0D0D] mb-3">Regulación del Sistema de Finanzas Abiertas (Open Finance) en Perú</h2>
+                <p class="text-customSecondary text-sm leading-relaxed mb-4">La SBS puso en consulta el reglamento para el intercambio de datos financieros bajo consentimiento, facilitando a los actuarios el acceso a perfiles de riesgo más precisos para el diseño de productos.</p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="card-tag">Open Finance</span><span class="card-tag">SBS</span><span class="card-tag">Datos de Riesgo</span>
+                </div>
+                <a href="https://www.google.com/search?q=regulacion-del-sistema-de-finanzas-abiertas-open-finance-en-peru" target="_blank" class="text-xs font-semibold text-blue-600 hover:underline">Buscar en Google →</a>
+            </article>
+
+            <!-- Card 8 -->
+            <article class="flex flex-col">
+                <h3 class="text-xs font-bold text-gray-400 mb-2">Item 8</h3>
+                <h2 class="font-display font-bold text-xl leading-snug text-[#0D0D0D] mb-3">Nueva normativa para la gestión del patrimonio efectivo en el sistema financiero</h2>
+                <p class="text-customSecondary text-sm leading-relaxed mb-4">Fue aprobado un nuevo reglamento de gestión de patrimonio efectivo que endurece las exigencias de solvencia y capital para conglomerados financieros, impactando la planificación de grupos aseguradores.</p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="card-tag">Patrimonio Efectivo</span><span class="card-tag">Solvencia</span><span class="card-tag">Regulación Financiera</span>
+                </div>
+                <a href="https://www.google.com/search?q=nueva-normativa-para-la-gestion-del-patrimonio-efectivo-en-el-sistema-financiero" target="_blank" class="text-xs font-semibold text-blue-600 hover:underline">Buscar en Google →</a>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full bg-[#F9F9F9] px-6 py-10">
+        <div class="max-w-5xl mx-auto">
+            <p class="text-sm text-customSecondary">Desarrollado por Frankli Zeña</p>
+            <p class="text-sm text-customSecondary font-semibold mt-1">NewsBrief – Inmersión ONE: Agentes de IA para Negocios</p>
+        </div>
+    </footer>
+
+</body>
+</html>

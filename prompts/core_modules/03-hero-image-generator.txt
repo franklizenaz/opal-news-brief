@@ -1,7 +1,9 @@
-Genera exactamente una imagen profesional para el hero de la web de NewsBrief.
+Genera exactamente una imagen para el hero de NewsBrief, en paisaje horizontal 16:9.
 
-Estilo: conceptual, abstracto y minimalista, para audiencia corporativa de alto nivel. Paleta: blanco puro, negro carbón profundo y toques sutiles de plata o gris suave. Sin ningún texto, palabra ni rótulo.
+Asunto: la imagen debe ilustrar de forma clara y reconocible el sector "[Sector]". Elige UNA escena u objeto central propio de ese sector —su entorno, herramientas, actividad o su transformación por la tecnología— y construye toda la imagen alrededor. Prohibido recurrir a figuras o líneas geométricas genéricas sin relación con el sector.
 
-Composición: paisaje horizontal 16:9 de ancho completo, con amplio espacio negativo y fondo blanco puro (#FFFFFF).
+Escena: composición con profundidad (elemento principal nítido, fondo suave), iluminación cinematográfica limpia y acabado editorial premium. Realista o render 3D de alta calidad.
 
-Contenido: el sector "[Sector]" transformado por la innovación tecnológica, mediante formas abstractas elegantes (estructuras geométricas fluidas, caminos de luz interconectados, formaciones de datos cristalinas). Sin representaciones literales, clichés, logos ni personas.
+Paleta: base neutra (gris claro, blanco roto, acero) con UN solo color de acento sobrio que evoque el sector. Prohibido el fondo blanco vacío y los colores saturados de bajo nivel.
+
+Restricciones: una sola imagen, sin texto, palabras ni rótulos, sin logos ni marcas.
