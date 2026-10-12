@@ -1,25 +1,19 @@
-Objetivo: Usa el text_generation_agent con anclaje de búsqueda para investigar en la web en tiempo real [Buscador Web] las noticias más relevantes y recientes sobre el sector y la región indicados por el usuario.
+Objetivo: Buscar en la web en tiempo real [Buscador Web] las noticias más recientes y relevantes sobre el sector y la región del usuario.
 
-Anclaje temporal:
-- Publica únicamente noticias cuya fecha de publicación esté entre [Fecha_noticias] (inclusive) y hoy.
-- Descarta cualquier noticia anterior a [Fecha_noticias], aunque sea del sector solicitado.
+Reglas:
+- Solo noticias publicadas entre [Fecha_noticias] (inclusive) y hoy; descarta las anteriores.
+- Devuelve exactamente [Numero_noticias] noticias; si no hay suficientes, devuelve las disponibles.
+- Todo el contenido en español.
 
-Cantidad:
-- Devuelve exactamente [Numero_noticias] noticias.
-- Si no existen suficientes noticias válidas en la ventana, devuelve las disponibles y omite el resto.
+Formato de salida (por cada noticia, sin ningún texto antes ni después):
 
-Idioma:
-- Todos los títulos y resúmenes de salida deben estar íntegramente en español.
-
-Formato de salida:
-Devuelve exactamente esta estructura por cada noticia, sin ningún texto antes o después:
-
-Item [número consecutivo desde 1]
-Titulo: [título de la noticia en español]
+Item [N]
+Titulo: [título en español]
 Resumen: [breve resumen del hecho en español]
+Keywords: [keyword 1] | [keyword 2]   (2 a 4 keywords en español)
 
 User Input / Context:
 Sector: [Sector]
 Región: [Región]
-Fecha_noticias: [Fecha_noticias] (formato YYYY-MM-DD)
+Fecha_noticias: [Fecha_noticias]
 Numero_noticias: [Numero_noticias]

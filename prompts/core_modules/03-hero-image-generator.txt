@@ -1,15 +1,7 @@
-Genera exactamente una imagen profesional de alta calidad para el encabezado (hero) de la web de NewsBrief. La imagen no puede contener ningún texto, palabra ni rótulo.
+Genera exactamente una imagen profesional para el hero de la web de NewsBrief.
 
-Estilo:
-- Conceptual, abstracto y minimalista, acorde a un ecosistema de inteligencia de negocios de alto nivel.
-- Paleta limpia y sofisticada: blanco puro, negro carbón profundo y toques sutiles de plata o gris suave.
-- Sensación general: inspiradora, innovadora y pulida.
+Estilo: conceptual, abstracto y minimalista, para audiencia corporativa de alto nivel. Paleta: blanco puro, negro carbón profundo y toques sutiles de plata o gris suave. Sin ningún texto, palabra ni rótulo.
 
-Composición:
-- Paisaje horizontal 16:9, pensado para una sección principal de ancho completo, con layout equilibrado y amplio espacio negativo.
-- Fondo blanco puro (#FFFFFF) para integrarse con la página.
+Composición: paisaje horizontal 16:9 de ancho completo, con amplio espacio negativo y fondo blanco puro (#FFFFFF).
 
-Contenido:
-- Representa artísticamente el sector "[Sector]" transformado por la innovación tecnológica de punta.
-- Evita representaciones literales y clichés: usa elementos abstractos elegantes, como estructuras geométricas fluidas, caminos de luz interconectados o formaciones de datos cristalinas.
-- Sin logos, marcas ni personas identificables.
+Contenido: el sector "[Sector]" transformado por la innovación tecnológica, mediante formas abstractas elegantes (estructuras geométricas fluidas, caminos de luz interconectados, formaciones de datos cristalinas). Sin representaciones literales, clichés, logos ni personas.

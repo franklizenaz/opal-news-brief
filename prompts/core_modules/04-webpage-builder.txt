@@ -1,21 +1,28 @@
-Crea una página web en HTML para NewsBrief que funcione como panel de inteligencia de noticias, estructurando los datos recibidos de acuerdo con la estructura de abajo:
+Crea una página web en HTML para NewsBrief con la estructura de abajo, usando los datos recibidos.
 
-Estructura de la Página:
+Estructura (en este orden, nada más):
 
-1. Encabezado: "NewsBrief" en la parte superior izquierda en destaque, acompañado de la frase institucional en texto más pequeño: "Inteligencia de Negocios". Debajo, en metadatos discretos, muestra la fecha [Fecha_noticias].
+1. Encabezado: "NewsBrief" arriba a la izquierda en destaque, "Inteligencia de Negocios" debajo en texto pequeño, y [Fecha_noticias] en metadatos discretos.
 
-2. Sección principal (Hero): la imagen conceptual recibida en [03-hero-image-generator] a ancho completo.
+2. Hero: la imagen [03-hero-image-generator] a ancho completo, en una sola columna. Solo la imagen: prohibido inventar títulos o párrafos.
 
-3. Barra de contexto: justo debajo de la imagen, el sector "[Sector]" y la región "[Región]" formateados como tags rectangulares en mayúsculas (ej: IA, TECH, BUSINESS).
+3. Barra de contexto: dos tags rectangulares en mayúsculas con [Sector] y [Región].
 
-4. Feed de noticias: arma exactamente [Numero_noticias] bloques verticales de noticias utilizando los datos entregados en news_data, de [02-data-formatter].
-   - Cada bloque inicia con su numeración secuencial de 2 dígitos sobre el total: 01/[Numero_noticias], 02/[Numero_noticias]... (ej: 01/10).
-   - Cada noticia debe mostrar su Título en negrita (#0D0D0D), su Resumen enfocado en el impacto de negocios, y un enlace de texto discreto "Buscar en Google →" apuntando a la URL del ítem.
-   - Cada noticia es un bloque independiente con sus propios datos.
+4. Feed: exactamente [Numero_noticias] tarjetas con los datos de news_data ([02-data-formatter]). Cada tarjeta, en este orden:
+   - Item [N] 
+   - Título en negrita (#0D0D0D)
+   - Resumen en texto secundario (#555555)
+   - Keywords como tags rectangulares pequeños en mayúsculas
+   - enlace discreto "Buscar en Google →" hacia la URL del ítem
+   Una tarjeta por noticia: prohibido resumir, agrupar o inventar noticias.
 
-REGLA ANTI-RESUMEN: lista exactamente [Numero_noticias] tarjetas, una por noticia. Prohibido resumir, agrupar o sintetizar las noticias en un párrafo o bloque único, y prohibido inventar noticias que no estén en news_data.
+5. Pie: bloque a ancho completo con fondo #F9F9F9, alineado a la izquierda, con padding amplio y texto pequeño en #555555, en dos líneas:
+   - Desarrollado por Frankli Zeña
+   - **NewsBrief** – Inmersión ONE: Agentes de IA para Negocios
+   Sin ©, sin iconos, sin enlaces, sin logo repetido.
 
-Variables Mapping:
-User input: [Sector], [Región], [Fecha_noticias], [Numero_noticias]
-news_data / Formateador_info: [02-data-formatter]
-hero_image: [03-hero-image-generator]
+Fin: no agregues secciones adicionales.
+
+Variables:
+User input: [Sector] [Región] [Fecha_noticias] [Numero_noticias]
+news_data = [02-data-formatter] · hero_image = [03-hero-image-generator]

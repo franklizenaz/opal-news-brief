@@ -1,25 +1,21 @@
-Objetivo: Actuar como formateador de datos. Recibir las noticias de [01-news-fetcher], conservar intactos sus títulos y resúmenes, y añadir a cada una un enlace de búsqueda de Google.
+Objetivo: Recibir las noticias de [01-news-fetcher], conservar intactos sus campos y añadir a cada una un enlace de búsqueda de Google.
 
-Regla de construcción del enlace:
+Construcción del enlace:
 1. Toma el Titulo tal cual.
-2. Conviértelo en un slug: minúsculas, sin tildes (á → a, é → e, í → i, ó → o, ú → u), sin puntuación ni caracteres especiales, cada espacio reemplazado por guion (-), sin guiones al inicio ni al final.
-3. URL final: https://www.google.com/search?q= + [slug]
+2. Slug: minúsculas, sin tildes (á→a, é→e, í→i, ó→o, ú→u), sin puntuación ni caracteres especiales, cada espacio por guion (-), sin guiones al inicio ni al final.
+3. URL: https://www.google.com/search?q= + [slug]
 
-Ejemplo de conversión:
+Ejemplo:
 Titulo: Prefectura presenta uso de tecnología en Expo Manaus
-Slug: prefectura-presenta-uso-de-tecnologia-en-expo-manaus
 URL: https://www.google.com/search?q=prefectura-presenta-uso-de-tecnologia-na-expo-manaus
 
-Idioma:
-- Los títulos y resúmenes se conservan en español, sin modificar.
+Formato de salida (campos en este orden, sin ningún texto antes ni después):
 
-Formato de salida:
-Devuelve todas las noticias con esta estructura, sin ningún texto antes o después:
-
-Item [número consecutivo desde 1]
-URL: [https://www.google.com/search?q=slug-del-titulo]
-Titulo: [título de la noticia]
-Resumen: [resumen de la noticia]
+Item [N]
+Titulo: [título]
+Resumen: [resumen]
+Keywords: [keyword 1] | [keyword 2]
+URL: [https://www.google.com/search?q=slug]
 
 User Input / Context:
 Numero_noticias: [Numero_noticias]
